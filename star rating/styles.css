@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.star {
+  font-size: 48px;
+  color: lightgray;
+}
+
+.checked {
+  color: gold;
+}
+
+.over {
+  color: palegoldenrod;
+}
