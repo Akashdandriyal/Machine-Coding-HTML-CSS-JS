@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: azure;
+}
+
+.control {
+  text-align: center;
+  font-weight: bold;
+}
+
+.control > p {
+  margin-bottom: 10px;
+}
+
+.btn {
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.modal {
+  border-radius: 5px;
+  background-color: white;
+  position: fixed;
+  transform: scale(0);
+  width: 50%;
+  transition: all 0.5s ease-in-out;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 2px solid lightgray;
+}
+
+.modal-content {
+  padding: 10px;
+}
