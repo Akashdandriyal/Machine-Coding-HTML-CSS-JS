@@ -1,0 +1,25 @@
+<!-- DOM manipulation using currying -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation</title>
+  </head>
+  <body>
+    <h1>DOM Manipulation</h1>
+    <h2 id="target">Secret</h2>
+    <script>
+      function currying(id) {
+        return function (content) {
+          document.querySelector(`#${id}`).innerText = content;
+        };
+      }
+      let target = currying("target");
+      target("This is a secret text.");
+      setTimeout(() => {
+        target("Secret text is changed.");
+      }, 4000);
+    </script>
+  </body>
+</html>
